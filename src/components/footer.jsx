@@ -48,7 +48,7 @@ export const Footer = () => {
           <div className="title">
             Sana Fathima
           </div>
-          <div className="title">Bringing ideas to life with code.</div>
+          <div className="title">Bringing ideas to life with code, creativity, and innovation!</div>
           <div className="title">Thanks for visiting!.</div>
         </div>
       </div>
