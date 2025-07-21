@@ -138,7 +138,7 @@ export const Projects = {
         "title": "Early Detection of Alzheimer’s",
         "subTitle": "Speech-Driven Cognitive Health Screening Tool",
         "insights": {
-            "desc": `his project is an AI-based system that detects early signs of Alzheimer’s disease by analyzing spontaneous speech. 
+            "desc": `This project is an AI-based system that detects early signs of Alzheimer’s disease by analyzing spontaneous speech. 
             It leverages linguistic and acoustic features extracted from patient transcripts and audio recordings, applying NLP and machine learning models to enable scalable, non-invasive cognitive screening.`,
             "category": "Healthcare, AI, NLP, Accessibility",
             "techStack": [ml, py, skl, scy],
