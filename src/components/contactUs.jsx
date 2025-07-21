@@ -21,13 +21,15 @@ export const ContactUs = () => {
     e.preventDefault();
     setStatus("Sending...");
     try {
-      const response = await fetch("https://portfolio-backend-m7id.onrender.com/api/server", {
+      const response = await fetch("https://formspree.io/f/xeozennl", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify(formData),
       });
+
       if (response.ok) {
         setStatus("Message sent successfully!");
         setFormData({ name: "", email: "", phone: "", message: "" });
@@ -147,7 +149,7 @@ export const ContactUs = () => {
               type="submit"
               className="bg-color2 text-color3 hover:bg-color2/80 hover:scale-105 transition duration-200 rounded-xl text-center font-semibold cursor-pointer w-2/3 h-[5vh] tracking-wide self-center md:w-[15rem]"
             >
-             {status === "Sending..." ? "Sending..." : "Send it Now"}
+              {status === "Sending..." ? "Sending..." : "Send it Now"}
             </button>
             <p className="text-color2 text-xs">{status}</p>
           </form>
