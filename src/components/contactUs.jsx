@@ -19,6 +19,20 @@ export const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!formData.name.trim()) {
+      setStatus("You cannot send a mail without the name.");
+      return;
+    }
+    if (!formData.email.trim()) {
+      setStatus("You cannot send a mail without the email.");
+      return;
+    }
+    if (!formData.message.trim()) {
+      setStatus("You cannot send a mail without the subject.");
+      return;
+    }
+
     setStatus("Sending...");
     try {
       const response = await fetch("https://formspree.io/f/xeozennl", {
@@ -41,6 +55,7 @@ export const ContactUs = () => {
       setStatus("Error occurred. Try again.");
     }
   };
+
 
   return (
     <>
